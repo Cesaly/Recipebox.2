@@ -1,0 +1,18 @@
+<div class ='container'>
+    <h1>Welcome to Cesaly's Recipe Box</h1>
+
+    <ul>
+        {% for recipes in data %}
+        <li>
+        {{ recipes.title}} - by {{ recipes.author.name }}
+            <ul>
+                <li>
+                    {{ recipes.description }}
+                </li>
+            </ul>
+        </li>
+        {% endfor%}
+    </ul>
+    
+
+</div>
