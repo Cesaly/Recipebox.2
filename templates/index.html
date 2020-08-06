@@ -4,15 +4,10 @@
     <ul>
         {% for recipes in data %}
         <li>
-        {{ recipes.title}} - by {{ recipes.author.name }}
-            <ul>
-                <li>
-                    {{ recipes.description }}
-                </li>
-            </ul>
+        <p><a href="/recipe/{{recipes.recipe}}">{{ recipes.title }}</a> - by {{ recipes.author.name }}</p>
         </li>
         {% endfor%}
     </ul>
     
-
-</div>
+   
+</div> 
