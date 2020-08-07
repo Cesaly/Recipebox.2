@@ -4,7 +4,7 @@
     <ul>
         {% for recipes in data %}
         <li>
-        <p><a href="/recipe/{{recipes.recipe}}">{{ recipes.title }}</a> - by {{ recipes.author.name }}</p>
+        <p><a href="/recipe/{{recipes.id}}/">{{ recipes.title }}</a></p>
         </li>
         {% endfor%}
     </ul>

@@ -1,1 +1,10 @@
-<h1>This is {{ recipe.author.name }}'s page</h1>
+<h1>This is {{ author.name }}'s page</h1>
+
+<ul>
+    {% for recipe in data %}
+    <li>
+    <p><a href="/recipe/{{recipe.id}}/">{{ recipe.title }}</a></p>
+    </li>
+    {% endfor%}
+</ul>
+<a href="/">Home</a>
