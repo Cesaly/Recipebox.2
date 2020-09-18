@@ -10,7 +10,17 @@ class AddRecipeForm(forms.Form):
     instructions = forms.CharField(widget=forms.Textarea)
 
 
+class EditRecipeForm(forms.Form):
+    pass
+    # title =
+    # description =
+    # time_required =
+    # instructions = 
+
+
 class AddAuthorForm(forms.ModelForm):
     class Meta:
         model = Author
         fields = ["name", "bio"]
+
+
