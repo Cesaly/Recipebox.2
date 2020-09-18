@@ -8,4 +8,9 @@
     </li>
    
 </ul> 
+
+<a href="/favorite/{{ recipe.id }}/">favorite this recipe</a>
+{% if user == recipe.author or user.is_staff %}
+<a href='/recipe/{{ recipe.id }}/edit/'>edit this recipe</a>
+{% endif %}
 <a href="/">Home</a>
